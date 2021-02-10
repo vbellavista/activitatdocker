@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+</head>
+<body class="bg-secondary">
+    <form class="row justify-content-center mt-4 bg-light" action="registrar.php" method="POST">
+        <div class="row justify-content-center">
+        </div>
+        <div>
+          <h4 class="row justify-content-center">Formulari</h4>
+          <div class="needs-validation" novalidate>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label>NOM</label>
+                <input type="text" name="nom" placeholder="NOM">
+              </div>
+              <div class="col-md-6 mb-3">
+                <label>COGNOM</label>
+                <input type="text" name="cognom" placeholder="COGNOM">
+              </div>
+            </div>
+            <div class=" mb-3">
+                <label for="lastName">DATA DE NAIXEMENT</label>
+                <input type="date" name="naixement">
+            </div>
+            <div class=" mb-3">
+              <label>EMAIL</label>
+              <input type="email"  name="email" placeholder="you@example.com">
+            </div>
+            <div class="row">
+              <div class="col-md-5 mb-3">
+                <label>ESTUDIS</label>
+                <select  name="estudi">
+                  <option >ESO</option>
+                  <option>CM</option>
+                  <option>CS</option>
+                  <option>BACHI</option>
+                </select>
+              </div>
+            </div>
+            <div class="d-block my-3">
+              <label>Sexe </label>
+              <div>
+                <input  name="sexo" type="radio" value="home">
+                <label >home</label>
+                <input  name="sexo" type="radio" value="dona">
+                <label>dona</label>
+              </div>
+            </div>
+            <div class="form-check">
+              <input type="checkbox"  name="checkbox">
+              <label>Vols guardar la info</label>
+            </div>
+            <hr class="mt-5">
+            <button class="btn btn-primary btn-lg btn-block mb-3" type="submit">ENVIAR</button>
+          </div>
+        </div>
+    </form>
+</body>
+</html>
